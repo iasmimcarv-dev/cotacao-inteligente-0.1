@@ -20,12 +20,6 @@ wheels/
 .installed.cfg
 *.egg
 
-# Virtual Environment
-venv/
-ENV/
-env/
-.venv
-
 # IDE
 .vscode/
 .idea/
@@ -39,19 +33,6 @@ env/
 .env.local
 .env.*.local
 
-# Database
-*.db
-*.sqlite
-*.sqlite3
-
 # Logs
 *.log
 logs/
-
-# OS
-Thumbs.db
-.DS_Store
-
-# Node (if used)
-node_modules/
-npm-debug.log
