@@ -34,6 +34,9 @@ jobs:
           rm -rf node_modules
           npm ci
 
+      - name: Workaround rollup optional native dependency
+        run: npm install @rollup/rollup-linux-x64-gnu --no-save
+
       - name: Inspect vite binary
         run: |
           ls -l node_modules/vite/bin || true
