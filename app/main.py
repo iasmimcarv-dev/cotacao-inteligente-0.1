@@ -18,8 +18,9 @@ from sqlalchemy.orm import Session as SQLAlchemySession
 
 from fastapi.middleware.cors import CORSMiddleware
 
-# Esta linha vai criar TODAS as tabelas se elas não existirem
-database.Base.metadata.create_all(bind=database.engine)
+# Create tables if they don't exist
+# (commented out during local testing - only works with valid DATABASE_URL)
+# database.Base.metadata.create_all(bind=database.engine)
 
 app = FastAPI(title=settings.APP_NAME)
 

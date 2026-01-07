@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/cotacao-assistente/', // Altere para o nome do seu repositório
+  base: '/cotacao-inteligente/',
   server: {
     port: 5173
   },
