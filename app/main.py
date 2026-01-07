@@ -19,8 +19,13 @@ from sqlalchemy.orm import Session as SQLAlchemySession
 from fastapi.middleware.cors import CORSMiddleware
 
 # Create tables if they don't exist
-# (commented out during local testing - only works with valid DATABASE_URL)
-# database.Base.metadata.create_all(bind=database.engine)
+# Criar tabelas automaticamente na inicialização
+try:
+    database.Base.metadata.create_all(bind=database.engine)
+    print("✅ Tabelas criadas/verificadas com sucesso!")
+except Exception as e:
+    print(f"⚠️ Aviso ao criar tabelas: {str(e)}")
+    # Continuar mesmo se falhar - pode ser problema de conexão
 
 app = FastAPI(title=settings.APP_NAME)
 
