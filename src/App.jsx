@@ -1,6 +1,7 @@
 import { NavLink, Route, Routes } from 'react-router-dom'
 import QuotePage from './pages/QuotePage'
 import AdminPage from './pages/AdminPage'
+import Footer from './components/Footer'
 import { useTheme } from './theme/ThemeProvider'
 
 function App() {
@@ -15,8 +16,8 @@ function App() {
     'bg-blue-500 text-white hover:bg-blue-600 transition-smooth'
 
   return (
-    <div className={'min-h-screen'}>
-      <div className="mx-auto max-w-7xl px-4 py-8">
+    <div className={'min-h-screen flex flex-col'}>
+      <div className="mx-auto max-w-7xl px-4 py-8 flex-1">
         <header
           className={`mb-8 rounded-2xl header-gradient-premium p-8 shadow-lg-refined relative overflow-hidden`}
         >
@@ -74,6 +75,8 @@ function App() {
           </Routes>
         </main>
       </div>
+
+      <Footer />
     </div>
   )
 }
