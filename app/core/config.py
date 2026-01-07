@@ -13,8 +13,11 @@ class Settings:
     CORS_ORIGINS: List[str] = [
         "http://localhost:5173",  # Local development
         "http://127.0.0.1:5173",  # Local development
-        "https://*.github.io",    # GitHub Pages (any user)
+        "https://iasmimcarv-dev.github.io",  # GitHub Pages (prod)
     ]
+
+    # Regex para permitir qualquer subdomínio do github.io (GitHub Pages)
+    ALLOW_ORIGIN_REGEX: str = r"https://.*\\.github\\.io"
     
     # If custom FRONTEND_URL in .env, add it
     frontend_url = os.getenv("FRONTEND_URL")
