@@ -22,6 +22,13 @@ jobs:
         with:
           node-version: '20'
 
+      - name: Debug - Check Node and npm
+        run: |
+          which node
+          which npm
+          node --version
+          npm --version
+
       - name: Install dependencies
         run: npm install
 
