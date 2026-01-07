@@ -985,7 +985,7 @@ export default function AdminPage() {
                       className={`w-full px-3 py-2 border rounded-lg ${
                         darkMode
                           ? 'bg-slate-900 text-slate-100 border-slate-700'
-                          : ''
+                          : 'bg-white text-slate-900 border-slate-300'
                       }`}
                       required
                     />
@@ -1006,7 +1006,7 @@ export default function AdminPage() {
                       className={`w-full px-3 py-2 border rounded-lg ${
                         darkMode
                           ? 'bg-slate-900 text-slate-100 border-slate-700'
-                          : ''
+                          : 'bg-white text-slate-900 border-slate-300'
                       }`}
                       required
                     >
@@ -1034,7 +1034,7 @@ export default function AdminPage() {
                       className={`w-full px-3 py-2 border rounded-lg ${
                         darkMode
                           ? 'bg-slate-900 text-slate-100 border-slate-700'
-                          : ''
+                          : 'bg-white text-slate-900 border-slate-300'
                       }`}
                       required
                     >
@@ -1059,7 +1059,7 @@ export default function AdminPage() {
                       className={`w-full px-3 py-2 border rounded-lg ${
                         darkMode
                           ? 'bg-slate-900 text-slate-100 border-slate-700'
-                          : ''
+                          : 'bg-white text-slate-900 border-slate-300'
                       }`}
                       required
                     >
@@ -1084,7 +1084,7 @@ export default function AdminPage() {
                       className={`w-full px-3 py-2 border rounded-lg ${
                         darkMode
                           ? 'bg-slate-900 text-slate-100 border-slate-700'
-                          : ''
+                          : 'bg-white text-slate-900 border-slate-300'
                       }`}
                       required
                     >
@@ -1110,7 +1110,7 @@ export default function AdminPage() {
                       className={`w-full px-3 py-2 border rounded-lg ${
                         darkMode
                           ? 'bg-slate-900 text-slate-100 border-slate-700'
-                          : ''
+                          : 'bg-white text-slate-900 border-slate-300'
                       }`}
                     />
                   </div>
@@ -1170,7 +1170,11 @@ export default function AdminPage() {
                       onChange={e =>
                         atualizarFaixa(index, 'faixa_etaria', e.target.value)
                       }
-                      className="flex-1 px-3 py-2 border rounded-lg"
+                      className={`flex-1 px-3 py-2 border rounded-lg ${
+                        darkMode
+                          ? 'bg-slate-900 text-slate-100 border-slate-700'
+                          : 'bg-white text-slate-900 border-slate-300'
+                      }`}
                       required
                     />
                     <input
@@ -1181,7 +1185,11 @@ export default function AdminPage() {
                       onChange={e =>
                         atualizarFaixa(index, 'valor', e.target.value)
                       }
-                      className="flex-1 px-3 py-2 border rounded-lg"
+                      className={`flex-1 px-3 py-2 border rounded-lg ${
+                        darkMode
+                          ? 'bg-slate-900 text-slate-100 border-slate-700'
+                          : 'bg-white text-slate-900 border-slate-300'
+                      }`}
                       required
                     />
                     <button
@@ -1216,7 +1224,11 @@ export default function AdminPage() {
                       onChange={e =>
                         atualizarHospital(index, 'nome', e.target.value)
                       }
-                      className="flex-1 px-3 py-2 border rounded-lg"
+                      className={`flex-1 px-3 py-2 border rounded-lg ${
+                        darkMode
+                          ? 'bg-slate-900 text-slate-100 border-slate-700'
+                          : 'bg-white text-slate-900 border-slate-300'
+                      }`}
                     />
                     <input
                       type="text"
@@ -1225,7 +1237,11 @@ export default function AdminPage() {
                       onChange={e =>
                         atualizarHospital(index, 'endereco', e.target.value)
                       }
-                      className="flex-1 px-3 py-2 border rounded-lg"
+                      className={`flex-1 px-3 py-2 border rounded-lg ${
+                        darkMode
+                          ? 'bg-slate-900 text-slate-100 border-slate-700'
+                          : 'bg-white text-slate-900 border-slate-300'
+                      }`}
                     />
                     <button
                       type="button"
@@ -1263,7 +1279,11 @@ export default function AdminPage() {
                           e.target.value
                         )
                       }
-                      className="flex-1 px-3 py-2 border rounded-lg"
+                      className={`flex-1 px-3 py-2 border rounded-lg ${
+                        darkMode
+                          ? 'bg-slate-900 text-slate-100 border-slate-700'
+                          : 'bg-white text-slate-900 border-slate-300'
+                      }`}
                     />
                     <input
                       type="number"
@@ -1272,7 +1292,11 @@ export default function AdminPage() {
                       onChange={e =>
                         atualizarCarenciaForm(index, 'dias', e.target.value)
                       }
-                      className="w-24 px-3 py-2 border rounded-lg"
+                      className={`w-24 px-3 py-2 border rounded-lg ${
+                        darkMode
+                          ? 'bg-slate-900 text-slate-100 border-slate-700'
+                          : 'bg-white text-slate-900 border-slate-300'
+                      }`}
                     />
                     <button
                       type="button"
@@ -1307,7 +1331,11 @@ export default function AdminPage() {
                         onChange={e =>
                           atualizarCoparticipacao(index, 'nome', e.target.value)
                         }
-                        className="flex-1 px-3 py-2 border rounded-lg"
+                        className={`flex-1 px-3 py-2 border rounded-lg ${
+                          darkMode
+                            ? 'bg-slate-900 text-slate-100 border-slate-700'
+                            : 'bg-white text-slate-900 border-slate-300'
+                        }`}
                       />
                       <input
                         type="text"
@@ -1320,7 +1348,11 @@ export default function AdminPage() {
                             e.target.value
                           )
                         }
-                        className="flex-1 px-3 py-2 border rounded-lg"
+                        className={`flex-1 px-3 py-2 border rounded-lg ${
+                          darkMode
+                            ? 'bg-slate-900 text-slate-100 border-slate-700'
+                            : 'bg-white text-slate-900 border-slate-300'
+                        }`}
                       />
                     </div>
                     <div className="flex gap-2">
@@ -1336,7 +1368,11 @@ export default function AdminPage() {
                             e.target.value
                           )
                         }
-                        className="flex-1 px-3 py-2 border rounded-lg"
+                        className={`flex-1 px-3 py-2 border rounded-lg ${
+                          darkMode
+                            ? 'bg-slate-900 text-slate-100 border-slate-700'
+                            : 'bg-white text-slate-900 border-slate-300'
+                        }`}
                       />
                       <input
                         type="number"
@@ -1350,7 +1386,11 @@ export default function AdminPage() {
                             e.target.value
                           )
                         }
-                        className="flex-1 px-3 py-2 border rounded-lg"
+                        className={`flex-1 px-3 py-2 border rounded-lg ${
+                          darkMode
+                            ? 'bg-slate-900 text-slate-100 border-slate-700'
+                            : 'bg-white text-slate-900 border-slate-300'
+                        }`}
                       />
                       <input
                         type="number"
@@ -1364,7 +1404,11 @@ export default function AdminPage() {
                             e.target.value
                           )
                         }
-                        className="flex-1 px-3 py-2 border rounded-lg"
+                        className={`flex-1 px-3 py-2 border rounded-lg ${
+                          darkMode
+                            ? 'bg-slate-900 text-slate-100 border-slate-700'
+                            : 'bg-white text-slate-900 border-slate-300'
+                        }`}
                       />
                       <button
                         type="button"
@@ -1397,7 +1441,11 @@ export default function AdminPage() {
                       placeholder="Nome do Município"
                       value={mun.nome}
                       onChange={e => atualizarMunicipio(index, e.target.value)}
-                      className="flex-1 px-3 py-2 border rounded-lg"
+                      className={`flex-1 px-3 py-2 border rounded-lg ${
+                        darkMode
+                          ? 'bg-slate-900 text-slate-100 border-slate-700'
+                          : 'bg-white text-slate-900 border-slate-300'
+                      }`}
                     />
                     <button
                       type="button"
