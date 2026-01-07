@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react'
 import { useTheme } from '../theme/ThemeProvider'
+import API_BASE_URL from '../config/api'
 
-const DEFAULT_API = 'http://127.0.0.1:8000/api/v1'
+const DEFAULT_API = API_BASE_URL
 
 export default function AdminPage() {
   const { darkMode } = useTheme()

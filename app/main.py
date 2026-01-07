@@ -1,6 +1,7 @@
 from fastapi import FastAPI, Depends
 from sqlalchemy.orm import Session
 from app.db import database
+from app.core.config import settings
 
 # ----------------- NOVOS IMPORTS -----------------
 from app.models import guia_model
@@ -20,11 +21,12 @@ from fastapi.middleware.cors import CORSMiddleware
 # Esta linha vai criar TODAS as tabelas se elas não existirem
 database.Base.metadata.create_all(bind=database.engine)
 
-app = FastAPI(title="Cotador Assistente API")
+app = FastAPI(title=settings.APP_NAME)
+
 # Configuração do CORS (Permitir que o Frontend converse com o Backend)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=settings.CORS_ORIGINS,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

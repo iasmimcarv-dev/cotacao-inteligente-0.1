@@ -1,8 +1,9 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useTheme } from '../theme/ThemeProvider'
 import ResultCard from '../components/ResultCard'
+import API_BASE_URL from '../config/api'
 
-const DEFAULT_API = 'http://127.0.0.1:8000/api/v1'
+const DEFAULT_API = API_BASE_URL
 
 const tipoContratacao = [
   { value: '', label: 'Todos' },

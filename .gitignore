@@ -20,6 +20,10 @@ wheels/
 .installed.cfg
 *.egg
 
+# Node
+node_modules/
+dist/
+
 # IDE
 .vscode/
 .idea/
@@ -32,6 +36,11 @@ wheels/
 .env
 .env.local
 .env.*.local
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
 
 # Logs
 *.log

@@ -1,0 +1,23 @@
+# Render Blueprint (Configuração Automática)
+# Este arquivo facilita o deploy no Render
+
+services:
+  # Backend FastAPI
+  - type: web
+    name: cotacao-backend
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port 10000
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: PYTHON_VERSION
+        value: 3.11.0
+
+databases:
+  # PostgreSQL Database
+  - name: cotacao-db
+    plan: free
+    databaseName: cotacao
+    user: cotacao_user
