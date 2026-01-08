@@ -16,11 +16,12 @@ function App() {
     'bg-blue-500 text-white hover:bg-blue-600 transition-smooth'
 
   return (
-    <div className={'min-h-screen flex flex-col'}>
-      <div className="mx-auto max-w-7xl px-4 py-8 flex-1">
-        <header
-          className={`mb-8 rounded-2xl header-gradient-premium p-8 shadow-lg-refined relative overflow-hidden`}
-        >
+    <div className={'min-h-screen flex flex-col bg-slate-50'}>
+      <div className="flex-1">
+        <div className="mx-auto max-w-7xl px-4 py-8">
+          <header
+            className={`mb-8 rounded-2xl header-gradient-premium p-8 shadow-lg-refined relative overflow-hidden`}
+          >
           <div className="header-particles"></div>
           <div className="header-shine"></div>
           <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between relative z-10">
@@ -74,6 +75,7 @@ function App() {
             <Route path="/admin" element={<AdminPage />} />
           </Routes>
         </main>
+        </div>
       </div>
 
       <Footer />
